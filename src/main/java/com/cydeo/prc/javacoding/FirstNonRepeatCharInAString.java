@@ -17,6 +17,7 @@ public class FirstNonRepeatCharInAString {
     }
     public static char findFirstNoRepeatChar(String givenStr){
         int strLen=givenStr.length();
+        System.out.println(strLen);
         String resultStr="";
         for(int i=0;i<strLen;i++){
             char current=givenStr.charAt(i);
