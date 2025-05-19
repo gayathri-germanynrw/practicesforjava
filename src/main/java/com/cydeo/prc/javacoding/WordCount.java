@@ -10,11 +10,13 @@ public class WordCount {
     public static void main(String[] args) {
         String str = "Hello world. Hello again!";
         // Convert to lowercase and remove punctuation (keep only letters and spaces)
-        String cleaned = str.toLowerCase().replaceAll("^A-Za-z//s", "");
-        //cleaned = str.toLowerCase().replaceAll("s[!.]", "");
+       String cleaned = str.toLowerCase().replaceAll("[^a-z\\s]", "");
+       // cleaned = str.toLowerCase().replaceAll("s[!.]", "");
+       System.out.println("cleaned String = " + cleaned);
 
         // Split by whitespace
         String[] strArrOfWords = cleaned.split("\\s+");
+        System.out.println("strArrOfWords = " + strArrOfWords);
 
 
         wordCnt(strArrOfWords);

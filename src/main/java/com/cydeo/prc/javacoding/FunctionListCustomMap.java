@@ -12,11 +12,12 @@ public class FunctionListCustomMap {
     for(T Item:inputList){
         resultList.add(func.apply(Item));
     }
-        return null;
+        return resultList;
     }
     public static void main(String[] args) {
        List<Integer> inputList=new ArrayList<>(Arrays.asList(1,2,3,4));
 
-       List<Integer> doubled=customMap(inputList,x->x*2);
+       List<Integer> doubled=customMap(inputList,x->x*5);
+        System.out.println("doubled = " + doubled);
     }
 }
