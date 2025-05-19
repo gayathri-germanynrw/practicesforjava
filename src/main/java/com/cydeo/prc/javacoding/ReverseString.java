@@ -13,6 +13,7 @@ public class ReverseString {
             resStr=resStr+str.charAt(i);
             System.out.println("resStr = " + resStr);
         }
+        System.out.println(resStr);
         return resStr;
     }
 }
