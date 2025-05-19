@@ -2,8 +2,9 @@ package com.cydeo.prc.javacoding;
 
 public class ReverseString {
     public static void main(String[] args) {
-        String givenStr="Gayathri Kasi";
+        String givenStr="Gayathri Kasi Chandra";
         String res=revStr(givenStr);
+
         System.out.println("res = " + res);
     }
     public static String revStr(String str){
